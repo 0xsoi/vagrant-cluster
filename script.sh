@@ -32,7 +32,7 @@ echo "Successfully insalled the LAMP stack on both nodes"
 
 # CONFIGURING APACHE TO START ON BOOT
 vagrant ssh master -c "sudo systemctl start apache2"
-vagrant ssh master -c "sudo systemctl start apache2"
+vagrant ssh slave -c "sudo systemctl start apache2"
 
 # SECURING MY SQL INSTALLATION
 vagrant ssh master -c "sudo mysql_secure_installation"
